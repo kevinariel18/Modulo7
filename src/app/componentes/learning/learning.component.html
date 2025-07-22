@@ -1,24 +1,29 @@
-<div>
-  <div>
-    <h2>CURSO</h2>
-    <div>
-      <ul>
-        <li>ID :{{course.id}}</li>
-        <li>NOMBRE DEL CURSO: {{ course.name }}</li>
-      </ul>
+<div class="container">
+  <div class="card my-5">
+    <div class="card-header">
+      <h2>CURSO</h2>
     </div>
-
-    <div>
-      <h3>ESTUDIANTES</h3>
-      <ul>
-        @for (student of course.students; track $index) {
-          <li>
-            <br>
-            Identificación: {{ student.identification }} <br>
-            Nombre: {{ student.name }} {{ student.surname }}
-          </li>
-        }
+    <div class="card-body">
+      <ul class="list-group mb-4">
+        <li class="list-group-item">ID: {{ course.id }}</li>
+        <li class="list-group-item">NOMBRE DEL CURSO: {{ course.name }}</li>
       </ul>
+
+      <div class="card">
+        <div class="card-header">
+          <h3>ESTUDIANTES</h3>
+        </div>
+        <div class="card-body">
+          <ul class="list-group">
+            @for (student of course.students; track $index) {
+              <li class="list-group-item">
+                <strong>Identificación:</strong> {{ student.identification }}<br>
+                <strong>Nombre:</strong> {{ student.name }} {{ student.surname }}
+              </li>
+            }
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </div>
