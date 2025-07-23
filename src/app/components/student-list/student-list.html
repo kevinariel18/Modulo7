@@ -1,0 +1,8 @@
+<ul class="list-group">
+  @for (student of students; track $index) {
+    <li class="list-group-item">
+      <strong>Identificación:</strong> {{ student.identification }}<br />
+      <strong>Nombre:</strong> {{ student.name }} {{ student.surname }}
+    </li>
+  }
+</ul>
