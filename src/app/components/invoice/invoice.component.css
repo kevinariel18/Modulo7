@@ -1,0 +1,29 @@
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.card-header {
+  background: linear-gradient(90deg, #0062cc, #004085);
+  color: #fff;
+  padding: 15px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.list-group-item {
+  font-size: 1.1rem;
+  font-weight: 500;
+  border: none;
+  background-color: #f8f9fa;
+}
